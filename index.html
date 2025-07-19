@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Image Compressor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: #f9fafe;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.2rem;
+    }
+    p {
+      color: #666;
+    }
+    .upload-box {
+      border: 2px dashed #3b82f6;
+      border-radius: 10px;
+      text-align: center;
+      padding: 2rem;
+      background: #eff6ff;
+      margin: 1rem 0;
+    }
+    .upload-box input {
+      display: none;
+    }
+    .upload-box label {
+      display: inline-block;
+      padding: 0.7rem 1.5rem;
+      background-color: #3b82f6;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.2rem;
+      margin: 2rem 0;
+    }
+    .feature {
+      text-align: center;
+    }
+    .feature h4 {
+      margin: 0.5rem 0;
+    }
+    .steps {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Image Compressor & Converter</h1>
+    <p>Compress and convert image files online for free.</p>
+
+    <div class="upload-box">
+      <p>or drag and drop images here</p>
+      <p>Max file size: 10MB</p>
+      <label for="fileInput">📁 Select Images</label>
+      <input type="file" id="fileInput" accept="image/*" />
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <h4>✅ Perfect Quality</h4>
+        <p>We intelligently apply compression to retain quality.</p>
+      </div>
+      <div class="feature">
+        <h4>🖼️ Image Formats</h4>
+        <p>JPG, PNG, WebP supported for input/output.</p>
+      </div>
+      <div class="feature">
+        <h4>🪶 Best Compression</h4>
+        <p>Reduce size by up to 80% without quality loss.</p>
+      </div>
+      <div class="feature">
+        <h4>👍 Easy to Use</h4>
+        <p>Upload and let the tool handle the rest.</p>
+      </div>
+    </div>
+
+    <h3>How to compress images?</h3>
+    <ol class="steps">
+      <li>Click "Select Images" to choose JPG, PNG or WebP files.</li>
+      <li>The tool will compress your images automatically.</li>
+      <li>Click 'Download' to save your optimized files.</li>
+    </ol>
+  </div>
+
+</body>
+</html>
